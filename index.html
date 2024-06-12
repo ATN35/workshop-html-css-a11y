@@ -15,21 +15,28 @@
 </head>
 
 <body>
-    <nav>
-        <a href="#">Workshop A11Y</a>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">The team</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
+    <!-- Lien de saut pour accéder directement au contenu principal -->
+    <a href="#main" class="skip">Skip to main content</a>
+    
+    <header>
+        <nav>
+            <!-- Navigation principale avec des liens -->
+            <a href="#" id="link-nav" aria-labelledby="link-nav article-nav">Workshop A11Y</a>
+            <ul>
+                <li><a href="#" id="link-home" aria-labelledby="link-home article-home">Home</a></li>
+                <li><a href="#" id="link-team" aria-labelledby="link-team article-team">The team</a></li>
+                <li><a href="#" id="link-about" aria-labelledby="link-about article-about">About us</a></li>
+                <li><a href="#" id="link-blog" aria-labelledby="link-blog article-blog">Blog</a></li>
+                <li><a href="#" id="link-services" aria-labelledby="link-services article-services">Services</a></li>
+                <li><a href="#" id="link-contact" aria-labelledby="link-contact article-contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    </nav>
-    <main>
+    <!-- Section principale de la page avec un ID pour le lien de saut -->
+    <main id="main">
         <hgroup>
-            <h1>Welcome here</h1>
+            <h1 id="article-home">Welcome here</h1>
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit.
                 <br />
@@ -42,29 +49,31 @@
                 </form>
             </search>
         </hgroup>
+
+        <!-- Section équipe -->
         <section class="full-bleed bg-100">
             <h2>Meet the team</h2>
             <ul class="list-horizontal">
                 <li>
-                    <img src="images/team/dale-whiteheart.png">
-                    <h5>Dale Whiteheart</h5>       
+                    <img src="images/team/dale-whiteheart.png" alt="Dale Whiteheart">
+                    <h3>Dale Whiteheart</h3>       
                 </li>
                 <li>
-                    <img src="images/team/eloisa-pintz.png">
-                    <h5>Eloisa Pintz</h5>       
+                    <img src="images/team/eloisa-pintz.png" alt="Eloisa Pintz">
+                    <h3>Eloisa Pintz</h3>       
                 </li>
                 <li>
-                    <img src="images/team/gregg-stawecki.png">
-                    <h5>Gregg Stawecki</h5>       
+                    <img src="images/team/gregg-stawecki.png" alt="Gregg Stawecki">
+                    <h3>Gregg Stawecki</h3>       
                 </li>
                 <li>
-                    <img src="images/team/gaynelle-causey.png">
-                    <h5>Gaynelle Causey</h5>       
+                    <img src="images/team/gaynelle-causey.png" alt="Gaynelle Causey">
+                    <h3>Gaynelle Causey</h3>       
                 </li>
             </ul>
-            
         </section>
-       
+
+        <!-- Section des articles en vedette -->
         <section class="featured-posts">
             <hgroup>
                 <h2>Featured posts</h2>
@@ -73,35 +82,37 @@
                     aspernatur ipsam ab.</p>
             </hgroup>
             <article>
-                <img src="images/posts/8byo_psa1_220426.jpg">
-                <h4>Enjoy boats transports</h4>
+                <img src="images/posts/8byo_psa1_220426.jpg" alt="Enjoy boats transports">
+                <h3 id="article-1">Enjoy boats transports</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore quam porro magnam recusandae.
                 </p>
-                <a href="#">Read more</a>
+                <a href="#" id="link-1" aria-labelledby="link-1 article-1">Read more</a>
             </article>
             <article>
-                <img src="images/posts/0f46533e-7b26-4243-91c5-93470e6be455.jpg">
-                <h4>A journey in the footsteps of history</h4>
+                <img src="images/posts/0f46533e-7b26-4243-91c5-93470e6be455.jpg" alt="A journey in the footsteps of history">
+                <h3 id="article-2">A journey in the footsteps of history</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore quam porro magnam recusandae
                     fugiat neque sit inventore.
                 </p>
-                <a href="#">Read more</a>
+                <a href="#" id="link-2" aria-labelledby="link-2 article-2">Read more</a>
             </article>
             <article>
-                <img src="images/posts/3497263.jpg">
-                <h4>Bees and flowers</h4>
+                <img src="images/posts/3497263.jpg" alt="Bees and flowers">
+                <h3 id="article-3">Bees and flowers</h3>
                 <p>
                     Lorem ipsum dolor sit amet consectetur adipisicing elit. Non labore quam porro magnam recusandae
                     fugiat neque sit inventore.
                 </p>
-                <a href="#">Read more</a>
+                <a href="#" id="link-3" aria-labelledby="link-3 article-3">Read more</a>
             </article>
             <div class="full-bleed text-center">
                 <a href="#">Browse all posts</a>
             </div>
         </section>
+
+        <!-- Section à propos de nous -->
         <section class="full-bleed bg-100">
             <h2>About us</h2>
             <p>
@@ -118,6 +129,7 @@
             </p>
         </section>
     </main>
+
     <footer>
         © 2024 Wild Code School | Credits <a href="https://www.freepik.com/free-vector/sunny-egyptian-pyramids-oasis-scene_153696746.htm#fromView=search&page=1&position=43&uuid=849090c3-8aa7-48c7-aa12-bc5bd7d3585a" target="_blank">Image by brgfx</a> on Freepik  | <a href="#">Contact</a>
     </footer>

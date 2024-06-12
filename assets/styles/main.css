@@ -2,8 +2,11 @@
     box-sizing: border-box;
 }
 
-*:focus {
-    outline: none;
+*:focus-visible{
+    outline-style: dashed;
+    outline-color: var(--outline-color);
+    outline-width: 3px;
+    outline-offset: 4px;
 }
 
 body {
@@ -58,3 +61,25 @@ a {
         text-underline-offset: 0.3em;
     }
 }
+
+/* Style pour cacher le lien de saut en dehors de l'écran */
+.skip {
+    position: absolute;
+    left: -10000px;
+    top: auto;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+  
+  /* Style pour afficher le lien de saut lorsqu'il est focalisé */
+  .skip:focus {
+    position: static;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    z-index: 1000;
+  }
+  
